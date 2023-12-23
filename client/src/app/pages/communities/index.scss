@@ -1,0 +1,41 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.dashboard {
+	display: flex;
+	position: relative;
+	min-height: 600px;
+
+	&__table {
+		margin: 0.1rem;
+		border: 1px solid $dark_shadow1;
+		width: 100%;
+		
+		.img {
+			width: 100px;
+			height: 100px;
+		}
+
+		.empty_data{
+			font-size: 24px;
+			@include absoluteCenter
+		}
+	}
+}
+
+table {
+	width: 100%;
+	th, td {
+		margin: 0 10px;
+		text-align: center;
+	}
+	td, th {
+		border-bottom: 1px solid $dark_shadow;
+	}
+	tr {
+		height: 100px;
+	}
+	tr:nth-last-child(1)  td{
+		border-bottom: none;
+	}
+}

@@ -1,0 +1,49 @@
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin customAbsoluteCenter($top, $left, $right, $bottom) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate($right, $bottom);
+}
+
+@mixin verticalCenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@mixin horizontalCenter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexbox {
+  display: flex;
+  align-items: center;
+}
+
+@mixin customFlex($justify, $alignitems) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignitems;
+}
+
+@mixin customFlexCenter($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

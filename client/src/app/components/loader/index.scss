@@ -1,0 +1,38 @@
+@import '../../../styles/mixins';
+
+.wrapper {
+    @include absoluteCenter;
+    
+    .spinning-loader {
+    height: 100%;
+    font-size: 0;
+    -webkit-animation: spin 3s cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+    animation: spin 3s cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(0deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+        }
+    }
+
+    .loader {
+        width: 50px;
+    }
+
+}
+
