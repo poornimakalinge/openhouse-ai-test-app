@@ -12,3 +12,5 @@
 
 # Run the below command to upload a build
 ### `npm run build`
+
+# If still more time allowed I would like to improve CSS & implement the CRUD operation.
