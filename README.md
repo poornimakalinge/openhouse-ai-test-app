@@ -1,2 +1,2 @@
-# Client folder serves fronend code
+# Client folder serves frontend code
 # Server folder serves backend code
